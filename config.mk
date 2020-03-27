@@ -58,7 +58,7 @@ PARALLEL_MODE   := OFF
 MPIFLAGS        :=
 OMPFLAGS        := -fopenmp
 
-BUILDTYPE       := precompiled
-#BUILDTYPE       := generic
+#BUILDTYPE       := precompiled
+BUILDTYPE       := generic
 
-FEATURES        :=
+FEATURES        :=OPENBLAS
