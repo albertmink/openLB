@@ -1,0 +1,51 @@
+<Param>
+  <Application>
+    <Name>aniso</Name>
+    <Discretization>
+      <Resolution>50</Resolution>
+      <LatticeRelaxationTime>1.0</LatticeRelaxationTime>
+    </Discretization>
+    <PhysParameter>
+      <case1  absorption=" 1.8 "  scattering=" 0.2 " />
+      <case2  absorption=" 1.2 "  scattering=" 0.8 " />
+      <case3  absorption=" 0.6 "  scattering=" 1.4 " />
+      <case4  absorption=" 0.2 "  scattering=" 1.8 " />
+      <case5  absorption=" 0 "    scattering=" 2 "   />
+      <case6  absorption=" 3.6 "  scattering=" 0.4 " />
+      <case7  absorption=" 2.4 "  scattering=" 1.6 " />
+      <case8  absorption=" 1.2 "  scattering=" 2.8 " />
+      <case9  absorption=" 0.4 "  scattering=" 3.6 " />
+      <case10 absorption=" 0 "    scattering=" 4 "   />
+      <case11 absorption=" 5.4 "  scattering=" 0.6 " />
+      <case12 absorption=" 3.6 "  scattering=" 2.4 " />
+      <case13 absorption=" 1.8 "  scattering=" 4.2 " />
+      <case14 absorption=" 0.6 "  scattering=" 5.4 " />
+      <case15 absorption=" 0 "    scattering=" 6 "   />
+      <case16 absorption=" 7.2 "  scattering=" 0.8 " />
+      <case17 absorption=" 4.8 "  scattering=" 3.2 " />
+      <case18 absorption=" 2.4 "  scattering=" 5.6 " />
+      <case19 absorption=" 0.8 "  scattering=" 7.2 " />
+      <case20 absorption=" 0 "    scattering=" 8 "   />
+      <case21 absorption=" 10.8 " scattering=" 1.2 " />
+      <case22 absorption=" 7.2 "  scattering=" 4.8 " />
+      <case23 absorption=" 3.6 "  scattering=" 8.4 " />
+      <case24 absorption=" 1.2 "  scattering=" 10.8 "/>
+      <case25 absorption=" 0 "    scattering=" 12 "  />
+      <case26 absorption=" 18 "   scattering=" 2 "   />
+      <case27 absorption=" 12 "   scattering=" 8 "   />
+      <case28 absorption=" 6 "    scattering=" 14 "  />
+      <case29 absorption=" 2 "    scattering=" 18 "  />
+      <case30 absorption=" 0 "    scattering=" 20 "  />
+      <case31 absorption=" 27 "   scattering=" 3 "   />
+      <case32 absorption=" 18 "   scattering=" 12 "  />
+      <case33 absorption=" 9 "    scattering=" 21 "  />
+      <case34 absorption=" 3 "    scattering=" 27 "  />
+      <case35 absorption=" 0 "    scattering=" 30 "  />
+      <AnisotropyFactor>0.0</AnisotropyFactor>
+    </PhysParameter>
+  </Application>
+  <Output>
+<!--saveIter: how oft writes during one physical timestep-->
+    <saveIter>2</saveIter>
+  </Output>
+</Param>
