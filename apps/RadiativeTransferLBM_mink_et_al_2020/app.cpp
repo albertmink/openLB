@@ -36,7 +36,7 @@ using namespace olb::descriptors;
 typedef double T;
 
 #define MINK
-#define DESCRIPTOR descriptors::D3Q7DescriptorRTLBM
+#define DESCRIPTOR descriptors::D3Q7<VELOCITY>
 
 //#define DESCRIPTOR descriptors::D3Q27DescriptorRTLBM
 
@@ -124,13 +124,15 @@ int main( int argc, char *argv[] )
   config["Application"]["Discretization"]["LatticeRelaxationTime"].read(LATTICERELAXATIONTIME);
   config["Application"]["PhysParameter"]["AnisotropyFactor"].read(ANISOTROPYFACTOR);
 
-  std::string caseName{"case"};
-  if( argc < 3) {
-    caseName.append(argv[1]);
-  } else if ( argc < 4 ) {
-    caseName.append(argv[1]);
-    RESOLUTION = std::atoi(argv[2]);
-  }
+  // passed parameters might override resolution from XML file
+//  std::string caseName{"case"};
+//  if( argc < 3) {
+//    caseName.append(argv[1]);
+//  } else if ( argc < 4 ) {
+//    caseName.append(argv[1]);
+//    RESOLUTION = std::atoi(argv[2]);
+//  }
+  std::string caseName{"case1"};
 #ifdef MINK
   singleton::directories().setOutputDir( "./"+std::to_string(RESOLUTION)+caseName+"_mink/" );
 #else
