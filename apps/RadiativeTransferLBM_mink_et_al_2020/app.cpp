@@ -250,7 +250,7 @@ int main( int argc, char *argv[] )
   const char * fileName = str.data();
   pFile  = fopen(fileName, "w");
   //fprintf(pFile, "%i\n", iT);
-  //fprintf(pFile, "%s, %s, %s, %s\n", "position x", "0.0", "0.25", "0.375", "flux-x", "flux-y", "flux-z");
+  fprintf(pFile, "%s, %s, %s, %s, %s, %s, %s\n", "position x", "0.0", "0.25", "0.375", "flux-x", "flux-y", "flux-z");
   for ( int nZ = 0; nZ <= 100; ++nZ ) {
     double line1[3] = {1.0*double(nZ)/100, 0, 0};
     double line2[3] = {1.0*double(nZ)/100, 0.25, 0};
